@@ -34,31 +34,11 @@ This project is developed for Eskimi SSP senior full-stack PHP developer task.
   fill in your database datails DB section in the .env file. It's highly recommended to create new database user in MySql database with specific database permission and privileges. And use that credential here.
 - __Step 5:__ Make sure that your database datails are correct in your 
     .env file
-- __Step 8:__ Now to build docker
+- __Step 6:__ Now to build docker
     > run ./vendor/bin/sail up
-- __Step 9:__ Login mysql container for creating database
-    > docker exec -it laradock_mysql_1 bash
-- __Step 10:__ Login mysql console
-    > mysql -uroot -proot
-- __Step 11:__ Create new database
-    > create database eskimi;
-- __step 12:__ Exit from mysql console
-    > exit
-- __Step 13:__ Exit from mysql container
-    > exit
-- __Step 14:__ Now login into workspace container for application setup
-    > docker exec -it laradock_workspace_1 bash
-- __Step 15:__ Download laravel dependencies 
-    > composer install
-- __Step 16:__ Now create environment key for laravel
-    > php artisan key:generate
-- __Step 17:__ Create soft link with storage folder 
-    > php artisan storage:link
-- __Step 17:__ Now browse http://localhost/ for application
-- __Step 18:__ For system test 
-    > php artisan test
-
-
+- __Step 7:__ Now browse http://localhost/ for application
+- __Step 8:__ For system test 
+    > sail artisan test
 
 ## License
 
